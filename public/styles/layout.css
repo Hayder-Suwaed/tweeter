@@ -19,5 +19,20 @@ html {
 /*---Positioning the main part of the my app with a proper width---*/
 .main {
   float: right;
-  width: 100%;
+  width: 110%;
+  position: relative;
+  left: 1em;
+  right: 1em;
+}
+
+.avatar {
+ position: relative;
+  left: 10px;
+  top: 5%;
+}
+
+.name {
+  position: relative;
+  left: 10px;
+  bottom: 10%;
 }
