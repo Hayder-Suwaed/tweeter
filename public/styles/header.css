@@ -1,0 +1,31 @@
+/*---Body styling----*/
+body {
+  box-sizing: border-box;
+  padding-top: 100px;
+  background-color: rgba(253, 246, 223, 0.733);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/*------Stylng the header------*/
+header {
+  width: 95%;
+  font-size: 24px;
+  text-align: center;
+  color: rgb(45, 38, 80);
+  background-color: rgb(228, 182, 161);
+  position: relative;
+  height: 500px;
+}
+
+/*------Styling the warpper calss------*/
+.wrapper {
+  position: relative;
+}
+.wrapper1 {
+  width: 100%;
+}
