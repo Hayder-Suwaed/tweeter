@@ -1,7 +1,7 @@
 /*---Body styling----*/
 body {
   box-sizing: border-box;
-  padding-top: 100px;
+  padding-top: 80px;
   background-color: rgba(253, 246, 223, 0.733);
 }
 
@@ -17,9 +17,9 @@ header {
   font-size: 24px;
   text-align: center;
   color: rgb(45, 38, 80);
-  background-color: rgb(228, 182, 161);
+  background-color: rgb(238, 155, 46);
   position: relative;
-  height: 500px;
+  height: 400px;
 }
 
 /*------Styling the warpper calss------*/
