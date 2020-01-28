@@ -1,0 +1,25 @@
+#button {
+  background-color: rgb(66, 51, 139);
+  font-family: "Bungee", cursive;
+  color: white;
+}
+.counter {
+  float: right;
+  font-family: "Bungee", cursive;
+}
+
+.counter.over {
+  color: red;
+}
+#text {
+  width: 100%;
+  background-color: transparent;
+  border: 0;
+  resize: none;
+  border-bottom: solid black;
+}
+
+.new-tweet {
+  margin: 0 auto;
+  width: 80%;
+}
