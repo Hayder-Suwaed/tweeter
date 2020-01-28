@@ -5,6 +5,7 @@ $(document).ready(function() {
     const count = $(this).siblings(".counter");
     count[0].innerText = 140 - len;
     if (count[0].innerText < 0) {
+        
       $(count).addClass("over");
     } else {
       $(count).removeClass("over");
