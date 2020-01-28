@@ -39,51 +39,7 @@
     color: rgb(66, 51, 139);
    }
 
-.text {
-    border-bottom: 4px solid black;
-    display: block;
-   }
 
-   .alert {
-    background-color: none;
-    color: red;
-    transition: opacity 0.6s;
-    text-align: center;
-    border-style: solid;
-    border-color: red;
-    display: none;
-  }
-  .alert2 {
-    background-color: none;
-    color: red;
-    transition: opacity 0.6s;
-    text-align: center;
-    border-style: solid;
-    border-color: red;
-    display: none;
-  }
-/*------Styling the close button oof the Error messages box-------*/
-  .closebtn {
-    margin-left: 15px;
-    color: rgb(5, 4, 4);
-    font-weight: bold;
-    float: right;
-    font-size: 22px;
-    line-height: 20px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  /*------Styling the close button oof the Error messages box-------*/
-  .closebtn1 {
-    margin-left: 15px;
-    color: rgb(5, 4, 4);
-    font-weight: bold;
-    float: right;
-    font-size: 22px;
-    line-height: 20px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
   /*----------Adding Hoverr property-------------*/
   .closebtn:hover {
     color: rgb(243, 243, 243);
