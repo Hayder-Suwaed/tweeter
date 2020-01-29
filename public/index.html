@@ -8,18 +8,22 @@
   <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Bungee|Source+Sans+Pro:300,700i&display=swap" rel="stylesheet">
   <!-- App CSS -->
-  <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
   <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
   <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
   <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/flex.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/tweetnew.css" type="text/css" />
 
   <!-- External JS -->
   <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
-
-  <!-- App JS -->
-  <script type="text/javascript" src="/scripts/client.js"></script>
   <script type="text/javascript" src="./scripts/composer-char-counter.js"></script>
-</head>
+  <script type="text/javascript" src="./scripts/client.js"></script>
+
+
+  <!-- FontAwesome import-->
+  <script src="https://kit.fontawesome.com/2d64613327.js" crossorigin="anonymous"></script>
+  <!-- App JS -->
 
 <body>
   <!-- Top nav bar (fixed) -->
@@ -28,39 +32,60 @@
     <span class="write-tweet">
       <strong>Write </strong>
       a new tweet
+      <!-----------Bouncing Arrow-------------->
+      <span id="click" class='arrow bounce'><i class="fas fa-angle-double-down"></i></span>
+    </span>
   </div>
   <div class="wrapper">
     <div class="wrapper1">
 
       <header class="main">
-        <div class="avatar">
+        <div class="avatarr">
+          <!---------Adding tmy App's Avatar--------->
           <img src="/images/profile-hex.png">
-        </div>
-        <br>
-        <div class="name">
-          <h2>Hayder Suwaed</h2>
-        </div>
+          <br></div>
+        <h2 class="namenav">Hayder Suwaed</h2>
       </header>
-    </div>
 
-     <!-- <main class="inputcontainer"> -->
-      <section class="new-tweet">
-        <div>
-          <form id="form" action="/tweets/" method="POST">
-            <div class="textarea">
-          </form>
-          <!---------Add a tweet button--------->
-          <div class="toggle">
-            <textarea id="text" name="text" placeholder="What are you humming about?"></textarea><br />
-            <div class="form__submit"></div>
-            <input id="button" type="submit" value="Tweet">
-            <span class="counter">140</span></div>
+    </div>
+    <div class="wrapper2">
+      <!------------Make a new close botton------------->
+      <main class="content">
+        <div class="alert">
+          <span class="closebtn">&times;</span>
+          <h2 class="error1">&#9888 NO TEXT TO TWEET!!! &#9888 </h2>
         </div>
-  </div>
-        </form>
-      </section>
+        <!--------------Alert the Error Message-------------->
+        <div class="alert2">
+          <span class="closebtn1">&times;</span>
+          <!-----------Alert the Error Message------------>
+          <h2 class="error2">&#9888 CHARACTER SIZE EXCEEDED!!! &#9888 </h2>
+        </div>
+        <!-- <main class="inputcontainer"> -->
+        <section class="new-tweet">
+          <div>
+            <form id="form" action="/tweets/" method="POST">
+              <div class="textarea">
+            </form>
+            <!---------Add a tweet button--------->
+            <div class="toggle">
+              <textarea id="text" name="text" placeholder="What are you humming about?"></textarea><br />
+              <div class="form__submit"></div>
+              <input id="button" type="submit" value="Tweet">
+              <span class="counter">140</span></div>
+          </div>
+    </div>
+    </form>
+    </section>
     </main>
+    <!-------Appending the tweet to my HTML--------->
+    <section id="tweet-container"></section>
+    <span id="click" class='float-button'><i class="fa fa-angle-double-up fa_custom"></i>
+    </span>
+  </div>
+  </div>
   </div>
 </body>
+</head>
 
 </html>
