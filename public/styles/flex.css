@@ -1,0 +1,21 @@
+@media only screen and (min-width: 1024px) {
+  .wrapper {
+    display: flex;
+    margin-top: 30px;
+  }
+  .wrapper1 {
+    width: 60%;
+    padding: 80px;
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+
+  .wrapper2 {
+    width: 80%;
+    margin-left: 40px;
+  }
+  .nav {
+    background-color: rgb(66, 51, 139);
+    background-image: none;
+  }
+}
