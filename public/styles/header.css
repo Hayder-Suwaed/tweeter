@@ -17,15 +17,12 @@ header {
   font-size: 24px;
   text-align: center;
   color: rgb(45, 38, 80);
-  background-color: rgb(238, 155, 46);
+  background-color: rgb(231, 183, 50);
   position: relative;
-  height: 400px;
+  padding-top: 20px;
 }
 
 /*------Styling the warpper calss------*/
-.wrapper {
-  position: relative;
-}
 .wrapper1 {
-  width: 100%;
+  height: 400px;
 }
