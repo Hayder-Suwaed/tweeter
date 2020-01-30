@@ -1,0 +1,14 @@
+$headerColour: #00a087;
+
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 50;
+  padding: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: headerColour;
+}
