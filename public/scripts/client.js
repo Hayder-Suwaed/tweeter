@@ -88,11 +88,8 @@ $(document).ready(function() {
       $(".alert").css("display", "block");
       $(".alert2").css("display", "none");
     } else if (!input.trim()) {
-      console.log("this is just white space")
       $(".alert").css("display", "block");
-
-    }
-     else {
+    } else {
       $.ajax({
         type: "POST",
         url: "/tweets",
@@ -118,13 +115,6 @@ $(document).ready(function() {
     $(".alert2").css("display", "none");
   });
 });
-
-//Hides error message, new tweet form and scroll button on page load
-// $(document).ready(() => {
-//   $(".alert").hide();
-//   // $('.new-tweet').hide();
-//   $(".float-button").hide();
-// });
 
 //Reveals scroll-to-top-of-page button when user scrolls down page
 $(document).ready(() => {
