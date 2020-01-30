@@ -80,14 +80,19 @@ $(document).ready(function() {
     event.preventDefault();
     loadTweets();
     const tweetForm = $(this).serialize();
-
-    const inputLength = $("#text").val().length;
-
-    if (inputLength > 140) {
+    const input = $("#text").val();
+    if (input.length > 140) {
       $(".alert2").css("display", "block");
-    } else if (inputLength === 0) {
+      $(".alert").css("display", "none");
+    } else if (input.length === 0) {
       $(".alert").css("display", "block");
-    } else {
+      $(".alert2").css("display", "none");
+    } else if (!input.trim()) {
+      console.log("this is just white space")
+      $(".alert").css("display", "block");
+
+    }
+     else {
       $.ajax({
         type: "POST",
         url: "/tweets",
@@ -115,11 +120,11 @@ $(document).ready(function() {
 });
 
 //Hides error message, new tweet form and scroll button on page load
-$(document).ready(() => {
-  $(".alert").hide();
-  // $('.new-tweet').hide();
-  $(".float-button").hide();
-});
+// $(document).ready(() => {
+//   $(".alert").hide();
+//   // $('.new-tweet').hide();
+//   $(".float-button").hide();
+// });
 
 //Reveals scroll-to-top-of-page button when user scrolls down page
 $(document).ready(() => {
