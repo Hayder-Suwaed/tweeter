@@ -27,7 +27,7 @@
 
 /*------ Set the minmum width to my nav class-------*/
 
-@media (min-width: 750px) {
+@media (min-width: 1024px) {
   .nav {
     background-color: #4056A1;
   }
